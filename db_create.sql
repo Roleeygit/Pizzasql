@@ -1,5 +1,6 @@
 DROP DATABASE IF EXISTS gopizzago;
 CREATE DATABASE gopizzago;
+use pizzago;
 
 DROP TABLE IF EXISTS `couriers`;
 CREATE TABLE `couriers` (
@@ -7,7 +8,7 @@ CREATE TABLE `couriers` (
     name VARCHAR(15),
     phone VARCHAR(30)
 );
-
+DROP TABLE IF EXISTS `cities`;
 CREATE TABLE cities(
     id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
     city VARCHAR(50)
